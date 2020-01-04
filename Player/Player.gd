@@ -9,6 +9,9 @@ func _physics_process(delta):
 	_get_input(delta)
 	move_and_slide(velocity)
 
+
+#The movement is gonna need to be more crisp, especially with
+#deceleration and stopping
 func _get_input(delta):
 	if(Input.is_action_pressed("ui_left")):
 		velocity.x -= 10
